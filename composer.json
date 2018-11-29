@@ -9,5 +9,10 @@
             "name": "Sasha",
             "email": "shpykuliak@vis-design.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+          "Vis\\CurlClient\\": "src/"
+        }
+  }
 }
