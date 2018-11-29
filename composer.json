@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-          "Vis\\CurlClient\\": "src/"
+          "Shpik\\SearchLog\\": "src/"
         }
   }
 }
