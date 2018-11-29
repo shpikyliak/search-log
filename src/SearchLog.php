@@ -38,11 +38,10 @@ class SearchLog extends Model
         $searchLog = self::active()->where('query', trim($query))->first();
 
         if (!$searchLog) {
-            $searchLog = new SearchLog([
+            $searchLog =  SearchLog::create([
                 'query' => trim($query),
                 'counter' => 0
             ]);
-            $searchLog->save();
         }
 
         $searchLog->increment('counter');
