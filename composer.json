@@ -2,7 +2,7 @@
     "name": "shpik/search-log",
     "description": "logging search result. For each search query can use redirect url for any page",
     "require": {
-        "laravel/laravel": "5.*"
+       
     },
     "authors": [
         {
