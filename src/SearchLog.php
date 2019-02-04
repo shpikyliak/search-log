@@ -35,7 +35,7 @@ class SearchLog extends Model
      */
     public static function processQuery(string $query)
     {
-        $searchLog = self::active()->where('query', trim($query))->first();
+        $searchLog = self::where('query', trim($query))->first();
 
         if (!$searchLog) {
             $searchLog =  SearchLog::create([
